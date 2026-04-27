@@ -49,7 +49,9 @@
         </div>
 
         <div class="visitor-card">
-          <div id="map-container"></div>
+          <a id="visitor-map-link" href="https://mapmyvisitors.com/web/1c45c" title="Visit tracker" target="_blank" rel="noopener">
+            <img id="visitor-map-img" src="" alt="Visitor Map" style="width:100%;display:block;" />
+          </a>
         </div>
       </div>
     </header>
@@ -90,18 +92,15 @@
       const themeToggle = document.getElementById('themeToggle');
       const icon = themeToggle.querySelector('i');
       const MAP_ID = '9oRezoFUGIwCng6OSVy_Z3OTeHI32arGLkjfkTKKmjQ';
+      const MAP_BASE = 'https://mapmyvisitors.com/map.png?d=' + MAP_ID;
 
       function loadMap(isDark) {
-        var container = document.getElementById('map-container');
-        if (!container) return;
-        container.innerHTML = '';
+        var img = document.getElementById('visitor-map-img');
+        if (!img) return;
         var params = isDark
-          ? 'cl=6aab8c&co=131a14&cmo=4d8a6e&cmn=d4b87a&ct=d4d8d3'
-          : 'cl=3F6B57&co=FAFAF7&cmo=6aab8c&cmn=B89B5E&ct=252A24';
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'https://mapmyvisitors.com/map.js?' + params + '&w=258&t=n&d=' + MAP_ID;
-        container.appendChild(s);
+          ? '&cl=6aab8c&co=131a14&cmo=4d8a6e&cmn=d4b87a'
+          : '&cl=3F6B57&co=FAFAF7&cmo=6aab8c&cmn=B89B5E';
+        img.src = MAP_BASE + params;
       }
 
       function setTheme(isDark) {
