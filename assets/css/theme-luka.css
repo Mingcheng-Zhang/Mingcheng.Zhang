@@ -235,12 +235,11 @@ body.theme-luka .social-icons a:hover {
 body.theme-luka .visitor-card {
   margin: 40px auto 0;
   width: 260px;
-  padding: 10px;
+  padding: 0;
   border: 1px dashed var(--luka-border);
   border-radius: 14px;
-  color: var(--luka-secondary);
-  text-align: center;
   overflow: hidden;
+  text-align: center;
 }
 
 body.theme-luka .visitor-card-title {
