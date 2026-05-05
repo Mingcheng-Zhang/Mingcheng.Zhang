@@ -5,7 +5,8 @@
 **网站地址**：https://mingcheng-zhang.github.io  
 **GitHub 仓库**：https://github.com/Mingcheng-Zhang/mingcheng-zhang.github.io  
 **模板来源**：[Luka Homepage Template](https://github.com/wzsyyh/luka-homepage-template)（纯静态 HTML/CSS/JS，无构建工具）  
-**本地路径**：`e:/Personal_Website`
+**本地路径**：`C:\Personal_Website`  
+**Codex 维护说明**：见 `AGENTS.md`
 
 ---
 
@@ -23,7 +24,7 @@
 ## 文件结构
 
 ```
-e:/Personal_Website/
+C:\Personal_Website/
 ├── index.html              # 主页（所有内容均在此文件）
 ├── assets/
 │   ├── css/
@@ -37,7 +38,8 @@ e:/Personal_Website/
 │   │   └── scale.fix.js
 │   └── cv/
 │       └── README.md       # CV PDF 待上传至此目录，命名 cv.pdf
-└── CLAUDE.md
+├── CLAUDE.md
+└── AGENTS.md               # Codex 项目维护指南
 ```
 
 ---
@@ -109,7 +111,7 @@ e:/Personal_Website/
 ### 推送更新到 GitHub
 
 ```bash
-cd "e:/Personal_Website"
+cd "C:\Personal_Website"
 git add -A
 git commit -m "描述修改内容"
 git push
